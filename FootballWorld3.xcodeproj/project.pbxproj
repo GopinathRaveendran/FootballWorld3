@@ -13,6 +13,14 @@
 		52234C8528D0740500B1E719 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52234C8328D0740500B1E719 /* Main.storyboard */; };
 		52234C8728D0740800B1E719 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52234C8628D0740800B1E719 /* Assets.xcassets */; };
 		52234C8A28D0740800B1E719 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52234C8828D0740800B1E719 /* LaunchScreen.storyboard */; };
+		52234C9A28D07A3200B1E719 /* LoopingPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52234C9928D07A3200B1E719 /* LoopingPlayer.swift */; };
+		52234CA728D0923A00B1E719 /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52234CA628D0923A00B1E719 /* MatchViewController.swift */; };
+		52234CA928D095A800B1E719 /* MatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52234CA828D095A800B1E719 /* MatchTableViewCell.swift */; };
+		52234CD328D0B3E700B1E719 /* Football.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52234CD228D0B3E700B1E719 /* Football.swift */; };
+		52234CD628D0B64A00B1E719 /* FootballManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52234CD528D0B64A00B1E719 /* FootballManager.swift */; };
+		52234CD928D0B8B500B1E719 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 52234CD828D0B8B500B1E719 /* SDWebImage */; };
+		52234CDD28D1104C00B1E719 /* DetailMatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52234CDC28D1104C00B1E719 /* DetailMatchViewController.swift */; };
+		52234CDF28D1111F00B1E719 /* FootballPlay.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 52234CDE28D1111E00B1E719 /* FootballPlay.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,13 @@
 		52234C8628D0740800B1E719 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52234C8928D0740800B1E719 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52234C8B28D0740800B1E719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52234C9928D07A3200B1E719 /* LoopingPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopingPlayer.swift; sourceTree = "<group>"; };
+		52234CA628D0923A00B1E719 /* MatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewController.swift; sourceTree = "<group>"; };
+		52234CA828D095A800B1E719 /* MatchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTableViewCell.swift; sourceTree = "<group>"; };
+		52234CD228D0B3E700B1E719 /* Football.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Football.swift; sourceTree = "<group>"; };
+		52234CD528D0B64A00B1E719 /* FootballManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballManager.swift; sourceTree = "<group>"; };
+		52234CDC28D1104C00B1E719 /* DetailMatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMatchViewController.swift; sourceTree = "<group>"; };
+		52234CDE28D1111E00B1E719 /* FootballPlay.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FootballPlay.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52234CD928D0B8B500B1E719 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +72,70 @@
 		52234C7C28D0740500B1E719 /* FootballWorld3 */ = {
 			isa = PBXGroup;
 			children = (
-				52234C7D28D0740500B1E719 /* AppDelegate.swift */,
-				52234C7F28D0740500B1E719 /* SceneDelegate.swift */,
-				52234C8128D0740500B1E719 /* ViewController.swift */,
-				52234C8328D0740500B1E719 /* Main.storyboard */,
+				52234CD428D0B62E00B1E719 /* Helper */,
+				52234C9328D074F400B1E719 /* Asset */,
+				52234CA328D091A500B1E719 /* AppDelegate */,
+				52234CD128D0B39D00B1E719 /* Model */,
+				52234CA428D091B700B1E719 /* View */,
+				52234CA528D091CA00B1E719 /* Controller */,
 				52234C8628D0740800B1E719 /* Assets.xcassets */,
-				52234C8828D0740800B1E719 /* LaunchScreen.storyboard */,
 				52234C8B28D0740800B1E719 /* Info.plist */,
+				52234C9928D07A3200B1E719 /* LoopingPlayer.swift */,
 			);
 			path = FootballWorld3;
+			sourceTree = "<group>";
+		};
+		52234C9328D074F400B1E719 /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				52234CDE28D1111E00B1E719 /* FootballPlay.mp4 */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		52234CA328D091A500B1E719 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				52234C7D28D0740500B1E719 /* AppDelegate.swift */,
+				52234C7F28D0740500B1E719 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		52234CA428D091B700B1E719 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52234C8328D0740500B1E719 /* Main.storyboard */,
+				52234C8828D0740800B1E719 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52234CA528D091CA00B1E719 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52234C8128D0740500B1E719 /* ViewController.swift */,
+				52234CA628D0923A00B1E719 /* MatchViewController.swift */,
+				52234CDC28D1104C00B1E719 /* DetailMatchViewController.swift */,
+				52234CA828D095A800B1E719 /* MatchTableViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		52234CD128D0B39D00B1E719 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52234CD228D0B3E700B1E719 /* Football.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52234CD428D0B62E00B1E719 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				52234CD528D0B64A00B1E719 /* FootballManager.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +154,9 @@
 			dependencies = (
 			);
 			name = FootballWorld3;
+			packageProductDependencies = (
+				52234CD828D0B8B500B1E719 /* SDWebImage */,
+			);
 			productName = FootballWorld3;
 			productReference = 52234C7A28D0740500B1E719 /* FootballWorld3.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +185,9 @@
 				Base,
 			);
 			mainGroup = 52234C7128D0740500B1E719;
+			packageReferences = (
+				52234CD728D0B8B500B1E719 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 52234C7B28D0740500B1E719 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52234CDF28D1111F00B1E719 /* FootballPlay.mp4 in Resources */,
 				52234C8A28D0740800B1E719 /* LaunchScreen.storyboard in Resources */,
 				52234C8728D0740800B1E719 /* Assets.xcassets in Resources */,
 				52234C8528D0740500B1E719 /* Main.storyboard in Resources */,
@@ -139,8 +217,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				52234C8228D0740500B1E719 /* ViewController.swift in Sources */,
+				52234CA928D095A800B1E719 /* MatchTableViewCell.swift in Sources */,
 				52234C7E28D0740500B1E719 /* AppDelegate.swift in Sources */,
 				52234C8028D0740500B1E719 /* SceneDelegate.swift in Sources */,
+				52234C9A28D07A3200B1E719 /* LoopingPlayer.swift in Sources */,
+				52234CD328D0B3E700B1E719 /* Football.swift in Sources */,
+				52234CDD28D1104C00B1E719 /* DetailMatchViewController.swift in Sources */,
+				52234CD628D0B64A00B1E719 /* FootballManager.swift in Sources */,
+				52234CA728D0923A00B1E719 /* MatchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +442,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		52234CD728D0B8B500B1E719 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		52234CD828D0B8B500B1E719 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52234CD728D0B8B500B1E719 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 52234C7228D0740500B1E719 /* Project object */;
 }
